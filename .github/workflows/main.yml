@@ -70,7 +70,7 @@ jobs:
           nginxVersion: ${{ matrix.nginxVersion }}
       - name: Upload Artifacts
         if: ${{ env.GITHUB_ACTIONS_ENVIRONMENT != 'local' }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: nginx-${{ matrix.imageBase }}-${{ matrix.nginxVersion }}
           path: bin
