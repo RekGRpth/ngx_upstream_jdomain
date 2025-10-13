@@ -1,3 +1,7 @@
+# ngx_upstream_jdomain is deprecated
+
+Starting with nginx version 1.27.3, you can use the [server resolve](https://nginx.org/en/docs/http/ngx_http_upstream_module.html#resolve) feature to accomplish what is achieved by this module.
+
 # ngx_upstream_jdomain
 
 An asynchronous domain name resolution module for nginx upstream.
